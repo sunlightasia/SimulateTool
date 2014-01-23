@@ -1,10 +1,16 @@
 package com.enviseo.model;
 
+import java.io.Serializable;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
-public class Site {
+public class Site implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6299070474197814970L;
 	@Id
 	private String id;
 	private String name;
